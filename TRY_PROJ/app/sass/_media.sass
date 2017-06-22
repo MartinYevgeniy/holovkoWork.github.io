@@ -10,10 +10,15 @@
         font-size: 30px
       .form_wrap
         margin-top: 100px
-    .topline .container .mnu-wrap .main-mnu
-      ul
-        li
-          margin-right: 30px
+    .sect1 .topline .container .mnu-wrap .main-mnu ul
+      padding: 0
+      background-color: #fff
+      li
+        position: relative
+        margin-right: 0
+        ul
+          margin: 0
+          background-color: #fff
     .sect1 .container_items .wrap_h_items .wrap_items
       .item
         width: 300px
@@ -31,22 +36,27 @@
       .main-mnu
         position: absolute
         top: 40px
-        left: 50%
+        left: calc(50% - 10px)
         transform: translateX(-50%)
         display: none
         ul
-          padding-left: 10px
+          padding: 0 10px
           li
             text-align: center
             display: block
-            ul
-              right: 120px
     .sect1 .container_items .wrap_h_items .wrap_items
       .item
         width: 200px
         height: 150px
-        h4
-          font-size: 20px
+        .text_wrap .text
+          h4
+            font-size: 17px
+            margin: 0
+          p,a
+            padding: 3px 5px
+            margin: 3px 0 0 0
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
