@@ -6,6 +6,8 @@
 
 
 header
+  .container
+    padding: 0
   .wrap_top
     padding: 15px 40px
     background-position: center
@@ -30,6 +32,8 @@ header
       background-repeat: no-repeat
       background-size: contain
       background-position: center
+
+//topline menu
 .topline
   min-height: 55px
   background-position: center
@@ -43,11 +47,18 @@ header
       min-height: 55px
       li
         a
-          font-size: 18px
-          background-color: #4d4d4d
           color: transparent
+          text-transform: uppercase
+          font-family: ArialNarrowBold, sans-serif
+          background: linear-gradient(#555555, #a1a1a1)
+          transition: all .5s ease
           -webkit-background-clip: text
-          text-shadow: 0 2px 12px rgb(250, 250, 250)
+          font-size: 18px
+          &:hover,:active,:focus
+            color: #ffffff
+            background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0))
+
+
 .burger-wrap
   position: absolute
   display: none

@@ -18,6 +18,8 @@
       .map
         width: 200px
         height: 133px
+      h1
+        font-size: 55px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -26,8 +28,9 @@
       justify-content: center
       .map
         display: none
-      .h1
+      h1
         margin-left: 30px
+        font-size: 50px
 
 
 /* Extra Small Devices, Phones */
@@ -36,11 +39,10 @@
     .wrap_top
       .logo
         width: 55px
-        min-width: 55px
         height: 50px
-      .h1
-        width: 200px
-        height: 50px
+      h1
+        font-size: 35px
+        text-shadow: 0 1px 2px rgb(255, 255, 255),0 -1px 0 rgb(110, 110, 110),0 -2px 0 rgba(45, 45, 45, 0.45)
     .topline
       display: flex
       justify-content: center
@@ -48,40 +50,20 @@
         display: none
         position: absolute
         ul
-          padding-top: 50px
+          padding: 10px
+          margin-top: 55px
+          background-color: #e5d50f
+          border-radius: 10px
           flex-direction: column
-          li
-            display: block
+          li+li
+            margin-top: 5px
   .burger-wrap
     display: block
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 356px)
+  header
+    .wrap_top
+      h1
+        font-size: 28px
 
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 
