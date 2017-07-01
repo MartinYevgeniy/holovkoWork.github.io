@@ -7,38 +7,48 @@
 
 header
   .container
-    padding: 0
-  .wrap_top
-    padding: 15px 40px
     background-position: center
     background-size: cover
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: space-around
-    .logo
-      width: 95px
-      height: 88px
-      background: url(img/map.png) center
-      background-size: cover
-    .map
-      background: url(img/map.png) center
-      background-size: cover
-      width: 280px
-      height: 185px
-    .h1
-      width: 300px
-      height: 70px
-      background-repeat: no-repeat
-      background-size: contain
-      background-position: center
+    .wrap_top_content
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-around
+      .logo
+        width: 95px
+        height: 88px
+        background: url(img/map.png) center
+        background-size: cover
+      .map
+        background: url(img/map.png) center
+        background-size: cover
+        width: 280px
+        height: 185px
+      .h1
+        width: 300px
+        height: 70px
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
 
 //topline menu
 .topline
+  position: relative
   min-height: 55px
   background-position: center
   background-size: cover
-  .top_nav
+  a.e-mail
+    display: none
+    left: 25px
+    top: 5px
+    position: absolute
+    font-family: ArialNarrowBold, sans-serif
+    font-size: 25px
+    color: #000000
+    &:hover,:focus,:active
+      color: #ffffff
+      transition: all .3s ease
+  .top_nav, .top_nav_mob
     ul
       display: flex
       flex-direction: row
@@ -57,11 +67,67 @@ header
           &:hover,:active,:focus
             color: #ffffff
             background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0))
-
-
-.burger-wrap
-  position: absolute
+.top_nav_mob
   display: none
-.hamburger.is-active,.hamburger
-  &:focus
-    outline: none
+.sandv-wrap
+  text-align: right
+  display: none
+.nav-trigger
+  width: 50px
+  height: 50px
+  position: relative
+  background: transparent
+  border: none
+  vertical-align: middle
+  padding: 10px
+  margin: 0
+  cursor: pointer
+.nav-trigger:focus
+  outline: 0
+.nav-trigger:hover span, .nav-trigger:hover span:before, .nav-trigger:hover span:after
+  background: $act-color
+.nav-trigger:before
+  content: ''
+  opacity: 0
+  width: 0
+  height: 0
+  border-radius: 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  background: transparent
+  transform: translate(-50%, -50%)
+  transition: all 0.4s ease
+.nav-trigger span
+  display: block
+  position: relative
+.nav-trigger span:before, .nav-trigger span:after
+  content: ''
+  position: absolute
+  left: 0
+.nav-trigger span:before
+  top: -8px
+.nav-trigger span:after
+  bottom: -8px
+.nav-trigger span,
+.nav-trigger span:before,
+.nav-trigger span:after
+  width: 100%
+  height: 4px
+  background: $act-color
+  transition: all 0.4s ease
+.nav-trigger.is-active:before
+  opacity: 1
+  width: 50px
+  height: 50px
+  background: transparent
+.nav-trigger.is-active span
+  background: transparent
+.nav-trigger.is-active span:before
+  top: 0
+  transform: rotate(225deg)
+  background-color: $act-color
+.nav-trigger.is-active span:after
+  bottom: 0
+  transform: rotate(-225deg)
+  background-color: $act-color
