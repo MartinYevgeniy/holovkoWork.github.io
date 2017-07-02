@@ -5,6 +5,9 @@
 
 
 .sect3
+  .container
+    background-color: #f1f1f1
+.sect3
   .info
     font-size: 18px
     text-align: center
@@ -16,16 +19,78 @@
     .photo-item
       margin: 25px auto auto
 
-//CONTACTS
+//PRODUCTION
 
+.sect2
+  .container
+    .logos
+      text-align: center
+      .image
+        max-width: 40%
+        margin: 20px 7px
+        display: inline-block
+    .more
+      text-align: center
+      font-size: 24px
+      &:hover
+        color: #024308
+      &:visited
+        color: #000
+      &:active
+        color: #024308
+.owl-dots
+  display: inline-flex
+  .owl-dot
+    margin-right: 10px
+    width: 10px
+    height: 10px
+    background-color: #636363
+    border-radius: 50%
+.owl-stage
+  display: flex
+  align-items: center
+.owl-nav
+  width: 100%
+  position: absolute
+  top: 35%
+  transform: translateY(50%)
+.owl-next
+  position: absolute
+  right: 0
+  font-size: 25px
+.owl-prev
+  position: absolute
+  left: 0
+  font-size: 25px
+//ABOUT US
+.sect1
+  .container
+    background-color: #f1f1f1
+.sect1
+  .info
+    font-size: 18px
+  .photo
+    margin: auto
+    max-width: 420px
+
+//CONTACTS
 .sect4 .address-item
   display: flex
   flex-wrap: nowrap
+  justify-content: center
   margin-top: 20px
   &:hover
     color: #024308
   .text
-    margin-right: auto
+    min-width: 200px
+    margin-right: 40px
+    span
+      margin-top: 10px
+      font-family: ArialNarrowBold, sans-serif
+  .map
+    iframe
+      width: 600px
+      height: 500px
 .links
   display: flex
   *
@@ -35,35 +100,7 @@
     &:hover
       color: #024308
 
-//PRODUCTION
 
-.sect2
-  .container
-    .logos
-      text-align: center
-      .image
-        max-width: 13%
-        margin: 20px 7px
-        display: inline-block
-    .more
-      text-align: center
-      font-size: 24px
-
-      &:hover
-        color: #024308
-      &:visited
-        color: #000
-      &:active
-        color: #024308
-
-//ABOUT US
-
-.sect1
-  .info
-    font-size: 18px
-  .photo
-    margin: auto
-    max-width: 420px
 //UP BUTTON
 
 .upbutton
