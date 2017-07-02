@@ -1,0 +1,130 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+
+
+.sect3
+  .container
+    background-color: #f1f1f1
+.sect3
+  .info
+    font-size: 18px
+    text-align: center
+    margin-bottom: 10px
+  .photo
+    column-count: 2
+    column-width: 400px
+    column-gap: 30px
+    .photo-item
+      margin: 25px auto auto
+
+//PRODUCTION
+
+.sect2
+  .container
+    .logos
+      text-align: center
+      .image
+        max-width: 40%
+        margin: 20px 7px
+        display: inline-block
+    .more
+      text-align: center
+      font-size: 24px
+      &:hover
+        color: #024308
+      &:visited
+        color: #000
+      &:active
+        color: #024308
+.owl-dots
+  display: inline-flex
+  .owl-dot
+    margin-right: 10px
+    width: 10px
+    height: 10px
+    background-color: #636363
+    border-radius: 50%
+.owl-stage
+  display: flex
+  align-items: center
+.owl-nav
+  width: 100%
+  position: absolute
+  top: 35%
+  transform: translateY(50%)
+.owl-next
+  position: absolute
+  right: 0
+  font-size: 25px
+.owl-prev
+  position: absolute
+  left: 0
+  font-size: 25px
+//ABOUT US
+.sect1
+  .container
+    background-color: #f1f1f1
+.sect1
+  .info
+    font-size: 18px
+  .photo
+    margin: auto
+    max-width: 420px
+
+//CONTACTS
+.sect4 .address-item
+  display: flex
+  flex-wrap: nowrap
+  justify-content: center
+  margin-top: 20px
+  &:hover
+    color: #024308
+  .text
+    min-width: 200px
+    margin-right: 40px
+    span
+      margin-top: 10px
+      font-family: ArialNarrowBold, sans-serif
+  .map
+    iframe
+      width: 600px
+      height: 500px
+.links
+  display: flex
+  *
+    margin: auto
+    text-decoration: none
+    color: #000
+    &:hover
+      color: #024308
+
+
+//UP BUTTON
+
+.upbutton
+  font-size: 45px
+  color: #000
+  position: fixed
+  right: 0
+  margin-right: 10px
+  margin-bottom: 10px
+  width: 6%
+  text-align: center
+  bottom: 0
+  .fa
+    opacity: 0.8
+  &:hover
+    opacity: 0.7
+    transition: all 0.5s ease
+    background-color: #d3d3d3
+    color: #ff0000
+    
+
+
+
+
+
+
+@import "media"
