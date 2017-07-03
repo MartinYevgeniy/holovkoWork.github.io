@@ -15,25 +15,18 @@ $(function() {
     $(".owl-carousel").owlCarousel({
         loop: true,
         nav: true,
+        dots: true,
         navSpeed: 500,
         navText: ["<i class='fa fa-caret-left'></i>", "<i class='fa fa-caret-right'></i>"],
         responsive: {
             0:{
                 items: 1
             },
-            320:{
+            480:{
                 items: 2
             },
-            480:{
-                items: 3
-            },
             762:{
-                items: 4,
-                dots: false
-            },
-            992:{
-                dots: true,
-                items: 5
+                items: 3
             }
         }
     });

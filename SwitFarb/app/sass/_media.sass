@@ -11,12 +11,11 @@
 @media only screen and (max-width : 880px)
   header
     .wrap_top
-      .map
-        width: 200px
-        height: 133px
       h1
         margin-left: 30px
         font-size: 55px
+    .map
+      display: none
   .sect4 .address-item
     .map
       iframe
@@ -32,11 +31,6 @@
           display: none
         h1
           font-size: 50px
-  .sect1 .container .wrapper_info
-    .info
-      text-align: center
-    .photo
-      max-width: 320px
   .sect4 .address-item
     flex-direction: column
     align-items: center
@@ -52,6 +46,16 @@
       iframe
         width: 370px
         height: 270px
+  .upbutton
+    font-size: 35px
+    width: 40px
+  .animated
+    opacity: 1 !important
+    -webkit-animation-name: none !important
+    -o-animation-name: none !important
+    -moz-animation-name: none !important
+    animation-name: none !important
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   header
@@ -59,28 +63,27 @@
       .logo
         width: 66px
         height: 63px
+        margin-right: 0
       h1
         margin-left: 15px
         font-size: 35px
         text-shadow: 0 1px 2px rgb(255, 255, 255),0 -1px 0 rgb(110, 110, 110),0 -2px 0 rgba(45, 45, 45, 0.45)
-    .topline
-      a.e-mail
-        display: block
-      .top_nav
-        display: none
-      .top_nav_mob
-        ul
-          padding: 10px
-          text-align: center
-          display: inline-block
-          column-count: 2
-          column-gap: 50px
-          li
-            margin-left: 50%
-            min-width: 100px
-            transform: translateX(-50%)
-  .sect1 .container .wrapper_info .photo
-    max-width: 220px
+  .topline
+    a.e-mail
+      display: block
+    .top_nav
+      display: none
+    .top_nav_mob
+      ul
+        padding: 10px
+        text-align: center
+        display: inline-block
+        column-count: 2
+        column-gap: 50px
+        li
+          margin-left: 50%
+          min-width: 100px
+          transform: translateX(-50%)
   .sandv-wrap
     display: block
   .sect4 .address-item
@@ -88,11 +91,13 @@
       iframe
         width: 300px
         height: 200px
+  .upbutton
+    font-size: 28px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 356px)
   header
-    .wrap_top .wrap_top_content
+    .wrap_top
       h1
-        font-size: 28px
+        font-size: 25px
 
 
