@@ -31,7 +31,6 @@ body
   min-width: 320px
   position: relative
   line-height: 1.6
-  background-color: #ffffff
   font-family: $default-font
   overflow-x: hidden
   background-size: cover
@@ -51,18 +50,11 @@ h1
   text-align: center
   font-size: 65px
   text-transform: uppercase
-  color: #ffffff
-
-h2
+  color: transparent
+  letter-spacing: 0.1em
+  text-shadow: 0 2px 2px rgb(255, 255, 255),0 -1px 0 rgb(110, 110, 110),0 -2px 0 rgba(45, 45, 45, 0.45)
   font-family: ArialNarrowBold, sans-serif
-  font-size: 30px
-  text-align: center
-  text-transform: uppercase
-  margin-bottom: 20px
 
-
-h1,h2,h4
-  margin: 0
 
 ul
   padding: 0
@@ -73,16 +65,8 @@ ul
 
 a
   text-decoration: none
-  color: #271F18
-  text-transform: uppercase
-  font-family: ArialNarrowBold, sans-serif
-  transition: all .5s ease
-  font-size: 18px
-  &:hover,:active,:focus
-    color: darken(#271F18,30%)
 
 .container
-  position: relative
   background-color: #ffffff
   max-width: 960px
   height: auto

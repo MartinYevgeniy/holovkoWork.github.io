@@ -6,21 +6,22 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
   .owl-dots
-   display: none
+    display: none
 
 @media only screen and (max-width : 880px)
   header
     .wrap_top
+      .map
+        width: 200px
+        height: 133px
       h1
         margin-left: 30px
         font-size: 55px
-    .map
-      display: none
   .sect4 .address-item
     .map
       iframe
-        width: 400px
-        height: 300px
+        width: 450px
+        height: 250px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 788px)
   header
@@ -31,31 +32,38 @@
           display: none
         h1
           font-size: 50px
+  .sect1 .container .wrapper_info
+    .info
+      text-align: center
+    .photo
+      max-width: 320px
   .sect4 .address-item
     flex-direction: column
     align-items: center
     .text
-      margin: 0
+      margin: 0 0 15px 0
       text-align: center
       width: 100%
       p
-        font-size: 14px
-      span
-        font-size: 15px
+        font-size: 18px
     .map
       iframe
-        width: 370px
-        height: 270px
-  .upbutton
-    font-size: 35px
-    width: 40px
-  .animated
-    opacity: 1 !important
-    -webkit-animation-name: none !important
-    -o-animation-name: none !important
-    -moz-animation-name: none !important
-    animation-name: none !important
+        width: 600px
+        height: 350px
+  .sect2
+    .logos
+      .closed
+        display: none
 
+@media only screen and (max-width : 660px)
+  .sect3 .photo
+    column-count: 1
+    .photo-item
+      max-width: 500px
+  .sect4 .address-item .map
+    iframe
+      width: 450px
+      height: 250px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
   header
@@ -63,41 +71,42 @@
       .logo
         width: 66px
         height: 63px
-        margin-right: 0
       h1
         margin-left: 15px
         font-size: 35px
         text-shadow: 0 1px 2px rgb(255, 255, 255),0 -1px 0 rgb(110, 110, 110),0 -2px 0 rgba(45, 45, 45, 0.45)
-  .topline
-    a.e-mail
-      display: block
-    .top_nav
-      display: none
-    .top_nav_mob
-      ul
-        padding: 10px
-        text-align: center
-        display: inline-block
-        column-count: 2
-        column-gap: 50px
-        li
-          margin-left: 50%
-          min-width: 100px
-          transform: translateX(-50%)
+    .topline
+      a.e-mail
+        display: block
+      .top_nav
+        display: none
+      .top_nav_mob
+        ul
+          max-width: 280px
+          text-align: center
+          display: inline-block
+          column-count: 2
+  .sect1 .container .wrapper_info .photo
+    max-width: 220px
   .sandv-wrap
     display: block
   .sect4 .address-item
     .map
       iframe
-        width: 300px
+        width: 350px
         height: 200px
   .upbutton
-    font-size: 28px
+    font-size: 35px
+    width: 40px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 356px)
   header
-    .wrap_top
+    .wrap_top .wrap_top_content
       h1
-        font-size: 25px
-
-
+        font-size: 28px
+  .upbutton
+    font-size: 30px
+  .sect4 .address-item .map
+    iframe
+      width: 310px
+      height: 220px

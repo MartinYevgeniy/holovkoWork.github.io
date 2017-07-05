@@ -2,83 +2,7 @@
 @import "vars"
 @import "libs"
 
-//ABOUT US
-.sect1
-  .container
-    min-height: 300px
-    background: url(../img/sect1_bg.jpg) center top fixed
-    background-size: cover
-    &::before
-      content: ''
-      position: absolute
-      width: 100%
-      height: 100%
-      left: 0
-      top: 0
-      margin: 0
-      background-color: rgba(255,255,255, .3)
-    .wrapper
-      position: relative
-      h2
-        margin: 60px 0 20px 0
-      p
-        text-align: center
-        font-size: 17px
 
-//PRODUCTION
-.sect2
-  .container
-    .logos
-      text-align: center
-      .image
-        width: 70%
-        margin: 20px 7px
-        display: inline-block
-    .more
-      text-align: center
-      font-size: 24px
-      &:hover
-        color: #024308
-      &:visited
-        color: #000
-      &:active
-        color: #024308
-.owl-dots
-  display: inline-flex
-  .owl-dot
-    margin-right: 13px
-    width: 13px
-    height: 13px
-    background-color: #636363
-    border-radius: 50%
-    &:hover, .active
-      background-color: #000
-.owl-stage
-  display: flex
-  align-items: center
-  max-height: 300px
-.owl-nav
-  width: 100%
-  position: absolute
-  top: 42%
-  transform: translateY(50%)
-.owl-next
-  right: 0
-.owl-prev
-  left: 0
-.owl-prev, .owl-next
-  position: absolute
-  font-size: 40px
-  width: 40px
-  height: 65px
-  transition: all .5s ease
-  &:hover,:active
-    color: #636363
-
-// section 3 POSLUGY
-.sect3
-  .container
-    background-color: #f1f1f1
 .sect3
   .info
     font-size: 18px
@@ -86,11 +10,43 @@
     margin-bottom: 10px
   .photo
     column-count: 2
-    column-width: 400px
     column-gap: 30px
     .photo-item
       margin: 25px auto auto
+    .photo-item:nth-child(1)
+      margin-top: 0
 
+//PRODUCTION
+.sect2
+  .container
+    .logos
+      text-align: center
+      .image
+        max-width: 40%
+        margin: 20px 7px
+        display: inline-block
+  .more
+    p
+      text-align: center
+      text-transform: uppercase
+      font-size: 25px
+      font-family: ArialNarrowBold, sans-serif
+      color: #1f1bcb
+  .closed
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+//ABOUT US
+.sect1
+  .container
+    background-color: #f1f1f1
+.sect1
+  .info
+    font-size: 18px
+  .photo
+    margin: auto
+    max-width: 420px
 
 //CONTACTS
 .sect4 .address-item
@@ -98,52 +54,39 @@
   flex-wrap: nowrap
   justify-content: center
   margin-top: 20px
-  &:hover
-    color: #024308
   .text
-    min-width: 200px
+    min-width: 240px
     margin-right: 40px
-    span
-      margin-top: 10px
-      font-family: ArialNarrowBold, sans-serif
+    margin-bottom: 15px
+    &:hover
+      p
+        color: #024308
+    p
+      font-size: 20px
+      line-height: 20px
   .map
     iframe
       width: 600px
-      height: 500px
+      height: 350px
 .links
   display: flex
   *
-    text-transform: none
     margin: auto
     text-decoration: none
     color: #000
     &:hover
       color: #024308
 
-footer
-  .foot-wrap
-    display: flex
-    flex-direction: row
-    align-items: center
-    justify-content: center
-    .logo
-      background-size: cover
-      width: 55px
-      height: 48px
-      margin-right: 40px
-    p
-      color: #ffffff
 
 //UP BUTTON
-
 .upbutton
   font-size: 45px
   color: #000
   position: fixed
   right: 0
-  margin-right: 5px
+  margin-right: 10px
   margin-bottom: 10px
-  width: 50px
+  width: 60px
   text-align: center
   bottom: 0
   .fa
@@ -153,11 +96,5 @@ footer
     transition: all 0.5s ease
     background-color: #d3d3d3
     color: #ff0000
-    
-
-
-
-
-
 
 @import "media"
