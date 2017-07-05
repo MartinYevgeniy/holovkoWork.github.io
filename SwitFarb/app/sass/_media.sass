@@ -14,9 +14,6 @@
       .map
         width: 200px
         height: 133px
-      h1
-        margin-left: 30px
-        font-size: 55px
   .sect4 .address-item
     .map
       iframe
@@ -30,8 +27,8 @@
         justify-content: center
         .map
           display: none
-        h1
-          font-size: 50px
+        .h1
+          margin-left: 40px
   .sect1 .container .wrapper_info
     .info
       text-align: center
@@ -71,10 +68,9 @@
       .logo
         width: 66px
         height: 63px
-      h1
-        margin-left: 15px
-        font-size: 35px
-        text-shadow: 0 1px 2px rgb(255, 255, 255),0 -1px 0 rgb(110, 110, 110),0 -2px 0 rgba(45, 45, 45, 0.45)
+      .h1
+        margin: 10px 0 0 20px
+        min-width: 250px
     .topline
       a.e-mail
         display: block
@@ -100,10 +96,10 @@
     width: 40px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 356px)
-  header
-    .wrap_top .wrap_top_content
-      h1
-        font-size: 28px
+  header .wrap_top .wrap_top_content
+    .h1
+      min-width: 200px
+      margin-top: 15px
   .upbutton
     font-size: 30px
   .sect4 .address-item .map
