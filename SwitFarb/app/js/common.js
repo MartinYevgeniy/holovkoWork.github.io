@@ -1,3 +1,4 @@
+
 $(function() {
 
 	// Custom JS
@@ -16,7 +17,7 @@ $(function() {
                 $(".closed").slideToggle();
                 $(".closed").toggleClass("on");
                 if($(".closed").hasClass("on")){
-                    $(this).text("скрыть");
+                    $(this).text("Сховати");
                 }
                 else{
                     $(".closed").removeClass("on");
@@ -24,7 +25,6 @@ $(function() {
                 }
             });
         }
-
 
 
     //nav

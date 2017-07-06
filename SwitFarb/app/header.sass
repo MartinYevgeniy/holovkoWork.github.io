@@ -8,7 +8,6 @@
 header
   .container
     position: relative
-    box-shadow: 0 8px 43px 0 #787878
     background-position: center
     background-size: cover
     .wrap_top_content
@@ -35,6 +34,7 @@ header
 
 //topline menu
 .container_topline
+  box-shadow: 0 6px 24px 0 rgba(0,0,0,.55)
   padding-top: 0
   padding-bottom: 0
   position: relative
@@ -55,6 +55,11 @@ header
     &:hover,:focus,:active
       color: #ffffff
       transition: all .3s ease
+  .top_nav
+    ul
+      margin-right: -30px
+      li
+        padding-top: 23px
   .top_nav, .top_nav_mob
     ul
       display: flex
@@ -62,20 +67,22 @@ header
       justify-content: space-around
       align-items: center
       li
-        padding: 21px 10px 13px 10px
+        padding: 19px 10px 13px 10px
         &:hover,:active,:focus
           transition: all .3s ease
           background-color: rgba(255, 255, 255, 0.2)
+.top_nav
+  margin-left: 58px
 .top_nav_mob
   position: absolute
   left: 0
   top: 100%
   margin-top: 5px
-  width: 100%
+  min-width: 100%
+  display: none
   text-align: center
   background-size: cover
   background-image: url(img/yellow_bg.png)
-  display: none
 .sandv-wrap
   text-align: right
   display: none

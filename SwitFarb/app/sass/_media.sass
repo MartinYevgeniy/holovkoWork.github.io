@@ -5,8 +5,7 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-  .owl-dots
-    display: none
+  /**/
 
 @media only screen and (max-width : 880px)
   header
@@ -54,9 +53,11 @@
 
 @media only screen and (max-width : 660px)
   .sect3 .photo
-    column-count: 1
-    .photo-item
-      max-width: 500px
+    flex-direction: column
+    .wrap-right
+      margin-left: 0
+      .photo-item:nth-child(1)
+        margin-top: 30px
   .sect4 .address-item .map
     iframe
       width: 450px
@@ -97,6 +98,10 @@
   .upbutton
     font-size: 35px
     width: 40px
+  .sect2 .container
+    .logos
+      .image
+        max-width: 20%
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 356px)
   header .wrap_top .wrap_top_content
