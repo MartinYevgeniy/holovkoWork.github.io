@@ -53,7 +53,8 @@ gulp.task('headersass', function() {
 gulp.task('libs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/waypoints/noframework.waypoints.min.js',
+		'app/libs/equalheights/equalheights.js',
+
 
 		// 'app/libs/magnific-popup/magnific-popup.min.js'
 		])
