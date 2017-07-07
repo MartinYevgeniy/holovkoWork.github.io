@@ -2,33 +2,24 @@
 @import "vars"
 @import "libs"
 
-
-.sect3
+//ABOUT US
+.sect1 .container
+  min-height: 100vh
   .info
-    margin-left: 9px
     p
-      margin-top: 12px
+      margin: 10px 0 25px 0
       font-size: 17px
-      margin-bottom: 20px
       text-indent: 17px
-      letter-spacing: .2px
-      word-spacing: .4px
+      text-align: justify
   .photo
-    margin-bottom: 45px
-    display: flex
-    flex-direction: row
-    justify-content: center
-    .wrap-right
-      margin-left: 25px
-      .photo-item
-        margin-top: 30px
-      .photo-item:nth-child(1)
-        margin-top: 0
-    .ph1
-      height: auto
+    margin: auto
+    max-width: 420px
+    margin-bottom: 35px
+
 //PRODUCTION
 .sect2
   .container
+    min-height: 100vh
     .logos
       margin-top: 10px
       display: flex
@@ -50,46 +41,60 @@
       font-family: ArialNarrowBold, sans-serif
       color: #1f1bcb
 
-//ABOUT US
-.sect1
+//POSLUGY
+.sect3 .container
+  min-height: 100vh
   .info
     p
-      margin: 10px 0 15px 0
+      margin-top: 12px
       font-size: 17px
+      margin-bottom: 20px
       text-indent: 17px
+      letter-spacing: .2px
+      word-spacing: .4px
+      text-align: justify
   .photo
-    margin: auto
-    max-width: 420px
-    margin-bottom: 35px
+    margin-bottom: 45px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .wrap-right
+      margin-left: 20px
+      .photo-item
+        margin-top: 30px
+      .photo-item:nth-child(1)
+        margin-top: 0
+    .ph1
+      height: auto
 
 //CONTACTS
-.sect4 .address-item
-  display: flex
-  flex-wrap: nowrap
-  justify-content: space-around
-  margin-top: 14px
-  .text
-    min-width: 240px
-    margin-right: 40px
-    margin-bottom: 15px
-    &:hover
+.sect4 .container
+  min-height: 100vh
+  .address-item
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-around
+    margin-top: 14px
+    .text
+      min-width: 240px
+      margin-right: 40px
+      margin-bottom: 15px
+      &:hover
+        p
+          color: #024308
       p
-        color: #024308
-    p
-      font-size: 20px
-      letter-spacing: .5px
-      word-spacing: .7px
-      line-height: 23px
-  .map
-    iframe
-      width: 515px
-      height: 265px
+        font-size: 20px
+        letter-spacing: .5px
+        word-spacing: .7px
+        line-height: 23px
+    .map
+      iframe
+        width: 515px
+        height: 265px
 .links
   margin-top: 10px
   display: flex
-  justify-content: center
-  a+a
-    margin-left: 146px
+  justify-content: space-around
   a
     font-size: 20px
     text-decoration: none
