@@ -56,10 +56,9 @@ header
       color: #ffffff
       transition: all .3s ease
   .top_nav
+    margin: 0 25px
     ul
-      margin-left: 30px
-      li
-        padding-top: 23px
+      min-height: 55px
   .top_nav, .top_nav_mob
     ul
       display: flex
@@ -67,12 +66,21 @@ header
       justify-content: space-around
       align-items: center
       li
-        padding: 19px 10px 13px 10px
-        &:hover,:active,:focus
+        position: relative
+        &::before
+          opacity: .0
+          width: 100%
+          content: ""
+          height: 2px
+          background-color: rgba(255,255,255, .7)
+          padding: 0
+          margin: 0
+          position: absolute
+          top: 19px
           transition: all .3s ease
-          background-color: rgba(255, 255, 255, 0.2)
-.top_nav
-  margin-left: 58px
+        &:hover,:active,:focus
+          &::before
+            opacity: 1
 .top_nav_mob
   position: absolute
   left: 0
@@ -83,6 +91,11 @@ header
   text-align: center
   background-size: cover
   background-image: url(img/yellow_bg.png)
+  ul
+    li
+      margin: 15px
+      &::before
+        right: 0
 .sandv-wrap
   text-align: right
   display: none

@@ -1,5 +1,5 @@
 
-$(function() {
+$(document).ready(function() {
 
 	// Custom JS
     $(".upbutton").click(function() {
